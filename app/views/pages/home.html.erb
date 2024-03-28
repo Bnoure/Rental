@@ -1,4 +1,24 @@
 <div class="container">
+
+  <div class="grid-container">
+  <% @cars.each do |car| %>
+    <div class="card">
+      <div class="card-img">
+          <%= cl_image_tag car.photo.key, class: "card-img" if car.photo.present? %>
+        <!-- Vous pouvez ajouter une image ici -->
+      </div>
+      <div class="card-title"><%= car.brand %> <%= car.model %></div>
+      <div class="card-subtitle"><%= car.address %></div>
+
+      <div class="card-footer">
+        <%= link_to car_path(car), class: "card-btn" do %>
+          <div class="card-price"><%= car.price_per_day %><span>€/par jour</span> </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
 <div class="search">
     <%= simple_form_for :search, url: cars_path, method: :get, html: { class: "fomrme", id: "search-form", onsubmit: "return validateForm();" } do |f| %>
   <div class="row">
