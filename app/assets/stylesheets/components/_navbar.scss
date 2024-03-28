@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  height: 55px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +10,39 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.dropdown-menu.show {
+  display: flex;
+  width: 421px;
+  background: white;
+  max-width: 765px;
+  padding-top: 2rem;
+  border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
+  border: 70;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease both;
+  border-left: none;
+  border-top: none;
+}
+
+.dropdown-menu[data-bs-popper] {
+  top: 81%;
+  left: -274px;
+  margin-top: var(--bs-dropdown-spacer);
+}
+
+.custom-button {
+  background-color: #f5f5f5;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
 }

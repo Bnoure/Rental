@@ -1,0 +1,14 @@
+/* Couleur des dates entre la date de début et de fin */
+.flatpickr-day.inRange {
+  background: rgb(230, 173, 173) !important;
+  border-color: rgb(230, 173, 173) !important;
+}
+
+/* Couleur de la date de début et de fin */
+.flatpickr-day.selected {
+  background: blue !important;
+  border-color: blue !important;
+}
+.flatpickr-calendar {
+  z-index: 10000 !important;
+}
