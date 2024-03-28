@@ -1,0 +1,133 @@
+.container {
+  display: grid;
+  // grid-template-columns: 0.4fr 1fr;
+  /*  grid-template-rows: 0.4fr 2.6fr 1.5fr 0.6fr; */
+  gap: 0px 0px;
+  grid-template-areas:
+    "navbar navbar"
+    "imaghero herotext"
+    "search search";
+}
+.search {
+  grid-area: search;
+  margin-left: 64px;
+}
+.navbar {
+  grid-area: navbar;
+}
+.imaghero {
+  grid-area: imaghero;
+}
+.herotext {
+  grid-area: herotext;
+  display: flex;
+
+  align-items: center;
+  gap: 125px;
+  flex-shrink: 0;
+}
+
+.formsearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+// .fomrme {
+//   position: fixed;
+//   bottom: 100px;
+//   right: 337px;
+// }
+
+.imb {
+  position: relative;
+  width: 550px;
+  border-radius: 10px;
+}
+
+.headline {
+  color: #f5f5f5;
+  width: 505px;
+
+  font-family: Inter;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px; /* 107.143% */
+  letter-spacing: -1px;
+}
+
+.subtitre {
+  color: #d9d9d9;
+  letter-spacing: 0.1px;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+}
+
+.buttonaccueil {
+  display: flex;
+  padding: var(--Sizes-3, 12px) var(--Sizes-6, 24px);
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  border-radius: 29px;
+  background-color: black;
+  border: none;
+}
+
+.subcontent {
+  display: flex;
+
+  align-items: baseline;
+  gap: 18px;
+}
+.accroche {
+  color: #fff;
+
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+
+.feature {
+  display: flex;
+
+  justify-content: center;
+
+  background: #f3f3f3;
+}
+
+.contentfeature {
+  display: flex;
+  padding: 5px 0px;
+
+  align-items: flex-start;
+  gap: 67px;
+}
+
+.imgfeature {
+  width: 95px;
+  height: 89px;
+  background-color: none;
+}
+
+.def {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+}

@@ -169,22 +169,18 @@
 
 .card-footer {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .card-price {
-  margin-top: 23px;
-  padding: 6px;
-  display: flex;
+  text-decoration: none;
+  /* margin-top: 23px; */
+  /* padding: 6px; */
+  /* display: flex; */
   font-size: 10px;
   font-weight: 500;
   color: var(--font-color);
-  align-items: center;
-  flex-direction: column;
 }
 
 .card-price span {
@@ -194,12 +190,12 @@
 }
 
 .card-btn {
-  // height: 22px;
-  // background: var(--bg-color);
-  // border: 2px solid var(--main-color);
-  // border-radius: 5px;
-  // padding: 0 15px;
-  // transition: all 0.3s;
+  height: 22px;
+  background: var(--bg-color);
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  padding: 0 15px;
+  transition: all 0.3s;
 }
 
 .card-img:hover {
