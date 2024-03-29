@@ -108,28 +108,28 @@ puts "----- Fin de la création des voitures -----"
 
 puts "----- Création de 25 réservations -----"
 
-# 25.times do
-#     duration = rand(1..5).to_i
+10.times do
+    duration = rand(1..5).to_i
 
-#     car = Car.all.sample
+    car = Car.all.sample
 
-#     existing_bookings = car.bookings.order(:starts_at)
-#     start_date = Date.today
+    existing_bookings = car.bookings.order(:starts_at)
+    start_date = Date.today
 
-#     existing_bookings.each do |booking|
-#         break unless start_date >= booking.starts_at && start_date < booking.ends_at
-#         start_date = booking.ends_at + 1
-#     end
-#     end_date = start_date + duration.days
+    existing_bookings.each do |booking|
+        break unless start_date >= booking.starts_at && start_date < booking.ends_at
+        start_date = booking.ends_at + 1
+    end
+    end_date = start_date + duration.days
 
-#     new_booking = Booking.new({
-#         car: car,
-#         starts_at: start_date,
-#         ends_at: end_date
-#     })
+    new_booking = Booking.new({
+        car: car,
+        starts_at: start_date,
+        ends_at: end_date
+    })
 
-#     new_booking.user = users.sample
-#     new_booking.save!
-# end
+    new_booking.user = users.sample
+    new_booking.save!
+end
 
 puts "----- Fin de la création de 25 réservations -----"
