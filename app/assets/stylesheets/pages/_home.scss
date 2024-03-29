@@ -99,7 +99,16 @@ footer {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 30px;
+    top: 1120px;
+  }
+  .centerlink {
+    position: relative;
+    right: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    font-weight: 600;
   }
 }
 @media screen and (max-width: 1440px) {
