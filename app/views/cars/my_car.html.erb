@@ -1,0 +1,7 @@
+<% @my_cars.each do |car| %>
+  <div>
+    <h2><%= car.brand %> <%= car.model %></h2>
+    <p><%= car.address %></p>
+    <p><%= car.price_per_day %> €/par jour</p>
+  </div>
+<% end %>

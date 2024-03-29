@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   resources :users, only: [] do
     resources :bookings, only: [:index]
   end
+  
+  get 'my_cars', to: 'cars#my_cars'
 
   resources :cars do
     resources :bookings, only: %i[index new create]

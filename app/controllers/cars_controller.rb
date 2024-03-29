@@ -29,8 +29,15 @@ class CarsController < ApplicationController
     @car.destroy
     redirect_to cars_path
   end
+  def my_cars
+    @my_cars = current_user.cars
+  end
 
   private
+  
+  def my_cars
+    @my_cars = current_user.cars
+  end
 
   def set_search_params_and_dates
     return unless params[:search]
