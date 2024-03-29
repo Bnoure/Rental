@@ -30,11 +30,16 @@ class CarsController < ApplicationController
     redirect_to cars_path
   end
   def my_cars
-    @my_cars = current_user.cars
+    if user_signed_in?
+      @my_cars = current_user.cars
+    else
+      # Redirigez vers la page de connexion, ou où vous voulez
+      redirect_to new_user_session_path
+    end
   end
 
   private
-  
+
   def my_cars
     @my_cars = current_user.cars
   end
