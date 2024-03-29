@@ -1,0 +1,12 @@
+<div class="custom-container">
+  <%= simple_form_for @car, html: { multipart: true } do |f| %>
+    <%= f.input :brand, label: 'Brand' %>
+    <%= f.input :model, label: 'Model' %>
+    <%= f.input :year_of_production, label: 'Year of Production' %>
+    <%= f.input :address, label: 'Address' %>
+    <%= f.input :price_per_day, label: 'Price per Day' %>
+    <%= f.input :city, label: 'City' %>
+    <%= f.input :photo, as: :file, label: 'Photo' %>
+    <%= f.button :submit, 'List for Rent' %>
+  <% end %>
+</div>

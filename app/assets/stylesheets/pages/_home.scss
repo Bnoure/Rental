@@ -53,12 +53,14 @@ footer {
 }
 
 .centerlink {
-  top: 20px;
-  display: flex;
   position: relative;
-  right: 764px;
-  gap: 30px;
-  font-size: 18px;
+  right: 644px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+
+  font-weight: 600;
 }
 
 .persocontainer {
@@ -75,4 +77,11 @@ footer {
   width: 3px;
   color: whitesmoke;
   background-color: black;
+}
+.custom-container {
+  background-color: white;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

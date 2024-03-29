@@ -1,6 +1,7 @@
 class CarsController < ApplicationController
   before_action :set_search_params_and_dates, only: [:index]
 
+
   def index
     @cars = Car.all
     @booking = Booking.new
@@ -16,6 +17,20 @@ class CarsController < ApplicationController
     @cars = @cars.where(model: @search_params[:model]) if @search_params[:model].present?
     @cars = @cars.where(brand: @search_params[:brand]) if @search_params[:brand].present?
     session[:search] = @search_params
+  end
+
+  def new
+    @car = Car.new
+  end
+
+  def create
+    @car = Car.new(car_params)
+    @car.user = current_user
+    if @car.save
+      redirect_to car_path(@car)
+    else
+      render :new
+    end
   end
 
   def show
@@ -57,4 +72,9 @@ class CarsController < ApplicationController
   def search_params
     params.require(:search).permit(:city, :model, :brand, :starts_date, :ends_date)
   end
+
+  def car_params
+    params.require(:car).permit(:brand, :model, :year_of_production, :address, :price_per_day, :city, :photo)
+  end
+
 end

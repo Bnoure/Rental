@@ -16,11 +16,11 @@
                       <div class="centerlink">
                         <%= link_to "Your Bookings", user_bookings_path(current_user), class: "nav-link" %>
                         <%= link_to "You Car in rent", my_cars_path, class: "nav-link" %>
-                        <%= link_to "Link 2", "#", class: "nav-link" %>
+                        <%= link_to "Rent your car", new_car_path, class: "nav-link" %>
                       </div>
                       <div class="about" data-controller="modal">
                         <li>
-                          <button class="nav-link" style="background: none; padding-right: 20px; font-size: 18px; margin-top: 20px;border: none" data-action="click->modal#open">About </button>
+                          <button class="nav-link" style="font-weight:600 ;background: none; padding-right: 20px; font-size: 18px; margin-top: 20px;border: none" data-action="click->modal#open">About </button>
                           <dialog id="dialog" data-modal-target="dialog">
                             <div class="modal-content">
                               <% if $image_url.nil? %>

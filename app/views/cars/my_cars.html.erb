@@ -1,8 +1,9 @@
 <div class="container">
-  <% @my_cars.each_slice(3) do |cars_group| %>
-    <div class="row" style="display: flex; justify-content: center;">
-      <% cars_group.each do |car| %>
-        <div class="voiture" style="width: 40%; margin-bottom: 20px; margin-right: 1.5%; margin-left: 1.5%;">
+  <% if @my_cars %>
+    <div class="row" style="display: flex; justify-content: center; flex-wrap: wrap;">
+      <% @my_cars.each_slice(3) do |cars_group| %>
+        <% cars_group.each do |car| %>
+          <div class="voiture" style="flex: 0 0 33.33%; max-width: 33.33%;">
           <div class="card">
             <div class="card-img">
               <%= cl_image_tag car.photo.key, class: "card-img", width: '226', height: '150.66' if car.photo.present? %>
@@ -21,9 +22,9 @@
             <div style="text-align: center; padding:10px; display: block;">
                 <%= link_to "Delete", car_path(car), data: { turbo_method: :delete } , method: :delete, class: "card-btn persobtn" %>
               </div>
-          </div>
-
-        </div>
+             </div>
+       </div>
+        <% end %>
       <% end %>
     </div>
   <% end %>
