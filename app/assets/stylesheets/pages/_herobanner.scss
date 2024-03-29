@@ -10,7 +10,6 @@
 }
 .search {
   grid-area: search;
-  margin-left: 64px;
 }
 .navbar {
   grid-area: navbar;
@@ -42,19 +41,18 @@
 
 .imb {
   position: relative;
-  width: 550px;
+  width: 654px;
   border-radius: 10px;
 }
 
 .headline {
   color: #f5f5f5;
-  width: 505px;
-
+  width: 488px;
   font-family: Inter;
-  font-size: 56px;
+  font-size: 71px;
   font-style: normal;
   font-weight: 900;
-  line-height: 60px; /* 107.143% */
+  line-height: 74px;
   letter-spacing: -1px;
 }
 
@@ -114,7 +112,7 @@
 
 .contentfeature {
   display: flex;
-  padding: 5px 0px;
+  padding: 30px 0px;
 
   align-items: flex-start;
   gap: 67px;
@@ -130,4 +128,9 @@
   display: flex;
   align-items: baseline;
   justify-content: space-evenly;
+}
+
+.subfeature {
+  font-size: 11px;
+  font-weight: 500;
 }

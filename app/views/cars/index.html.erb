@@ -1,2 +1,26 @@
-<h1>Cars#index</h1>
-<p>Find me in app/views/cars/index.html.erb</p>
+<%= link_to "back", root_path %>
+<div class="container", style="align-items: center;
+    display: flex;
+    justify-content: center;">
+  <%= render 'pages/search'%>
+</div>
+
+<div class="grid-container">
+  <% @cars.each do |car| %>
+    <div class="card">
+      <div class="card-img">
+        <%= cl_image_tag car.photo.key, class: "card-img", width: '226', height: '150.66' if car.photo.present? %>
+      </div>
+      <div class="card-title"><%= car.brand %> <%= car.model %></div>
+      <div class="card-subtitle"><%= car.address %></div>
+      <div class="card-footer">
+        <%= simple_form_for @booking, url: car_bookings_path(car_id: car.id), method: :post, html: { class: "card-btn" } do |f| %>
+  <%= f.hidden_field :starts_at, value: @start_date %>
+  <%= f.hidden_field :ends_at, value: @end_date %>
+  <%= f.button :submit, '', id: 'submit-button', style: 'display:none' %>
+  <label for="submit-button" class="card-price"><%= car.price_per_day %><span>€/par jour</span></label>
+<% end %>
+      </div>
+    </div>
+  <% end %>
+</div>

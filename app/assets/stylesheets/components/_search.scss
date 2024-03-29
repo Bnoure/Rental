@@ -1,0 +1,49 @@
+.search {
+  margin-top: 74px;
+  width: max-content;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  width: 1300px;
+  height: 237px;
+
+  position: relative;
+}
+
+.voiture {
+  display: flex;
+  margin-top: 92px;
+  gap: 300px;
+}
+
+.lasearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 28px;
+}
+
+.monbutton {
+  position: relative;
+  left: 250px;
+  top: 36px;
+  background-color: white;
+  z-index: 999;
+}
+
+.now {
+  display: flex;
+
+  color: white;
+  font-size: 45px;
+
+  font-family: Inter;
+  line-height: 60px;
+  justify-content: center;
+  letter-spacing: -1px;
+  position: relative;
+  right: 141px;
+  bottom: 80px;
+}

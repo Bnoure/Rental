@@ -2,33 +2,37 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
     <%= link_to root_path, class: "navbar-brand" do %>
-      <%#= image_tag "logo.png" %>
-    <% end %>
+  <%= image_tag "Rental.png" %>
+<% end %>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-        <% if user_signed_in? %>
-          <li class="nav-item active">
-            <%= link_to "Accueil", root_path, class: "nav-link", style: "padding-right: 20px; font-size: 18px; margin-top: 20px; " %>
-          </li>
-          <li class="nav-item active">
-            <%#= link_to "Vos réservations", user_bookings_path, class: "nav-link", style: "padding-right: 20px; font-size: 18px; margin-top: 20px;" %>
-          </li>
-          <div class="about" data-controller="modal">
-            <!-- ... -->
-            <li>
-              <button class="nav-link" style="background: none; padding-right: 20px; font-size: 18px; margin-top: 20px;border: none" data-action="click->modal#open">À propos </button>
-              <dialog id="dialog" data-modal-target="dialog">
-                <div class="modal-content">
-                  <% if $image_url.nil? %>
-                    <%= image_tag 'nour.jpg', class: "avatarNour" %>
-                  <% else %>
-                    <%= cl_image_tag($image_url, class: "avatarNour") %>
-                  <% end %>
+<div class="collapse navbar-collapse " id="navbarSupportedContent">
+  <ul class="navbar-nav me-auto">
+    <% if user_signed_in? %>
+      <li class="nav-item active">
+        <%= link_to "Home", root_path, class: "nav-link", style: "padding-right: 20px; font-size: 18px; margin-top: 20px; " %>
+      </li>
+      <li class="nav-item active">
+
+      </li>
+      <div class="centerlink">
+        <%= link_to "Your Bookings", user_bookings_path(current_user), class: "nav-link" %>
+        <%= link_to "Link 2", "#", class: "nav-link" %>
+      </div>
+      <div class="about" data-controller="modal">
+
+        <li>
+          <button class="nav-link" style="background: none; padding-right: 20px; font-size: 18px; margin-top: 20px;border: none" data-action="click->modal#open">About </button>
+          <dialog id="dialog" data-modal-target="dialog">
+            <div class="modal-content">
+              <% if $image_url.nil? %>
+                <%= image_tag 'nour.jpg', class: "avatarNour" %>
+              <% else %>
+                <%= cl_image_tag($image_url, class: "avatarNour") %>
+              <% end %>
                   <h3 style="display: flex; align-items: center; justify-content: center;">👋 Hey, je suis Nour-Eddine Benkerroum</h3>
                   <p>🚀 Passionné par le développement web, Je poursuis ma passion pour le développement web après avoir complété ma formation chez Le Wagon, me préparant à embrasser pleinement la carrière de développeur full stack. Fort d'une expérience antérieure en tant que chef de projet IT, j'ai décidé de changer de cap pour embrasser pleinement le monde du développement. Mon objectif est d'acquérir une expertise solide dans l'écosystème JavaScript, en me concentrant sur React, TypeScript, Node.js, et plus encore.</p>
                   <hr>

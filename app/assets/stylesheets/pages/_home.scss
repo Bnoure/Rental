@@ -5,8 +5,58 @@ body {
 }
 
 footer {
-  margin-left: 197px;
+  color: antiquewhite;
+}
+
+.feature-block {
+  display: flex;
+  /* margin-bottom: 48px; */
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.imgfeature {
+  margin-right: 20px;
+}
+
+.feature-text {
+  flex-grow: 1;
+}
+
+.bottomtext {
+  display: flex;
+  color: white;
+  font-size: 45px;
+  font-family: Inter;
+  line-height: 60px;
+  justify-content: center;
+  letter-spacing: -1px;
   position: relative;
-  bottom: 19px;
-  background-color: none !important;
+  width: 720px;
+}
+
+.fusee {
+  margin-top: 22px;
+
+  width: 82px;
+  height: 80px;
+}
+
+.explorer {
+  gap: 50px;
+  display: flex;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.centerlink {
+  top: 20px;
+  display: flex;
+  position: relative;
+  right: 764px;
+  gap: 30px;
+  font-size: 18px;
 }

@@ -1,34 +1,28 @@
-<footer class="text-center">
+<footer class="text-center" >
   <!-- Grid container -->
-  <div class="container p-4" style="display:flex; align-content:center; justify-content:center;">
-    <!-- Section: Images -->
+  <div class="container" style="display:flex; align-content:center; justify-content:center;">
+
     <section class="">
-      <div class="row">
-        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-          <div class="bg-image shadow-1-strong rounded">
-            <%= image_tag(url_for(@cars[0].photo), style: "width: 130px") if @cars[0] && @cars[0].photo.attached? %>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-          <div class="bg-image shadow-1-strong rounded">
-            <%= image_tag(url_for(@cars[1].photo), style: "width: 130px") if @cars[1] && @cars[1].photo.attached? %>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-          <div class="bg-image shadow-1-strong rounded">
-           <%= image_tag(url_for(@cars[2].photo), style: "width: 130px") if @cars[2] && @cars[2].photo.attached? %>
-          </div>
-        </div>
-      </div>
+      <h2 class="title">Rental</h2>
+      <p class="text">Rental is a car rental platform that offers a wide range of vehicles for every need. Whether you're looking for a compact car for city cruising or an SUV for family outings, we have quality options available for you. Our user-friendly interface makes it easy to explore, select, and drive with ease. Experience competitive pricing and full transparency with us, ensuring no surprises or hidden fees. Book confidently and get the best value for your rental with Rental.</p>
     </section>
-    <!-- Section: Images -->
+
   </div>
   <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="text-center p-3" style="right: 120px; position: relative; bottom: 18px;">
+  <div class="text-center p-3 " style="align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: white ;">
     © 2024 Copyright:
-    <a class="text-body" href="https://github.com/Bnoure">By Nour-Eddine Benkerroum </a>
+    <a class="link" href="https://github.com/Bnoure">By Nour-Eddine Benkerroum </a>
   </div>
+  <div class="logo">
+  <%= link_to '#herotext' do %>
+    <%= image_tag("Rental.png", class: "logo") %>
+  <% end %>
+</div>
   <!-- Copyright -->
 </footer>
