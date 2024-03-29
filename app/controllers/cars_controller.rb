@@ -1,7 +1,6 @@
 class CarsController < ApplicationController
   before_action :set_search_params_and_dates, only: [:index]
 
-
   def index
     @cars = Car.all
     @booking = Booking.new
@@ -36,9 +35,10 @@ class CarsController < ApplicationController
   def show
     @car = Car.find(params[:id])
     @booking = Booking.new
+    @start_date = params[:start_date] || session[:search][:starts_date]
+    @end_date = params[:end_date] || session[:search][:ends_date]
     @search_params = params[:search] || {}
   end
-
   def destroy
     @car = Car.find(params[:id])
     @car.destroy
@@ -59,8 +59,8 @@ class CarsController < ApplicationController
     return unless params[:search]
 
     @search_params = search_params.to_h
-    if @search_params[:starts_date]
-      start_date, end_date = @search_params[:starts_date].split(' to ')
+    if @search_params[:start_date]
+      start_date, end_date = @search_params[:start_date].split(' to ')
       @search_params[:starts_date] = Date.strptime(start_date, "%d-%m-%Y") if start_date
       @search_params[:ends_date] = Date.strptime(end_date, "%d-%m-%Y") if end_date
       @start_date = @search_params[:starts_date]
@@ -70,11 +70,10 @@ class CarsController < ApplicationController
   end
 
   def search_params
-    params.require(:search).permit(:city, :model, :brand, :starts_date, :ends_date)
+    params.require(:search).permit(:city, :model, :brand, :start_date)
   end
 
   def car_params
     params.require(:car).permit(:brand, :model, :year_of_production, :address, :price_per_day, :city, :photo)
   end
-
 end

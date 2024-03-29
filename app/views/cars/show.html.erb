@@ -13,10 +13,13 @@
     <div class="card-title"><%= @car.brand %> <%= @car.model %></div>
     <div class="card-subtitle"><%= @car.address %></div>
     <div class="card-footer">
+       <% debugger %>
       <%= simple_form_for @booking, url: car_bookings_path(car_id: @car.id), method: :post, html: { class: "card-btn" } do |f| %>
         <%= f.hidden_field :starts_at, value: @start_date %>
         <%= f.hidden_field :ends_at, value: @end_date %>
-        <%= f.button :submit, '', id: 'submit-button', style: 'display:none' %>
+
+        <%= f.button :submit, '', id: "submit-button-#{@car.id}", style: 'display:none' %>
+
         <label for="submit-button" class="card-price"><%= @car.price_per_day %><span>€/par jour</span></label>
       <% end %>
     </div>
