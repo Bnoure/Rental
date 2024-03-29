@@ -102,3 +102,12 @@ footer {
     bottom: 30px;
   }
 }
+@media screen and (max-width: 1440px) {
+  footer .logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: initial;
+    margin-top: 0;
+  }
+}

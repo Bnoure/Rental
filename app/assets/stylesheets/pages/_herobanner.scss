@@ -148,3 +148,14 @@
     gap: 33px;
   }
 }
+@media screen and (max-width: 1440px) {
+  .navbar .navbar-nav .nav-item {
+    position: relative;
+  }
+
+  .navbar .navbar-nav .nav-item a {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
