@@ -215,3 +215,15 @@
 .card-btn:active {
   transform: translateY(3px);
 }
+
+@media screen and (max-width: 1920px) {
+  .grid-container {
+    padding: 40px 20px;
+    gap: 50px;
+  }
+
+  .voiture {
+    margin-top: 0;
+    gap: 50px;
+  }
+}
