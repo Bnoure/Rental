@@ -60,3 +60,19 @@ footer {
   gap: 30px;
   font-size: 18px;
 }
+
+.persocontainer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.persobtn {
+  text-decoration: none;
+  padding: 9px;
+  font-size: 15px;
+  width: 3px;
+  color: whitesmoke;
+  background-color: black;
+}

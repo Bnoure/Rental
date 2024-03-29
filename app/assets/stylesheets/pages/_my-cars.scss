@@ -1,0 +1,38 @@
+.my-cars-container {
+  .my-cars-row {
+    display: flex;
+    justify-content: center;
+  }
+  .my-cars-voiture {
+    width: 40%;
+    margin-bottom: 20px;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+  }
+  .my-cars-card {
+    .my-cars-card-img {
+      width: 226px;
+      height: 150.66px;
+    }
+    .my-cars-card-subtitle {
+      gap: 10px;
+      .my-cars-subtitle-text {
+        width: 155px;
+      }
+    }
+    .my-cars-card-footer {
+      .my-cars-card-subtitle {
+        text-align: center;
+        display: block;
+        .my-cars-booking-count {
+          font-weight: 600;
+        }
+      }
+    }
+    .my-cars-delete-button {
+      text-align: center;
+      padding: 10px;
+      display: block;
+    }
+  }
+}

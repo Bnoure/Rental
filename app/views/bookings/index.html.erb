@@ -1,14 +1,39 @@
-<% @bookings.each_with_index do |booking, index| %>
-  <%= cl_image_tag booking.car.photo.key, class: "card-img" %>
-  <p>ID de réservation : <%= booking.id %></p>
-  <p>Voiture : <%= booking.car.model %> <%= booking.car.brand %></p>
-  <p>Date de début : <%= booking.starts_at %></p>
-  <p>Date de fin : <%= booking.ends_at %></p>
-  <p>Nombre de jours avant : <%= @date %></p>
-  <div class="price">
-  Prix total : <%= @prices[index] %> €
-  </div>
-  <% if @date != 0 %>
-    <%= link_to "Supprimer", booking_path(booking), data: { turbo_method: :delete } , method: :delete %>
-  <% end %>
-<% end %>
+<div class="container persocontainer">
+<div class="voiture">
+  <% @bookings.reverse.each do |booking| %>
+    <div class="card">
+      <div class="card-img">
+        <%= cl_image_tag booking.car.photo.key, class: "card-img", width: '226', height: '150.66' if booking.car.photo.present? %>
+      </div>
+      <div class="card-title"><%= booking.car.brand %> <%= booking.car.model %></div>
+      <div class="card-subtitle", style="gap: 10px">
+        <p style="width: 70px;">Start date: <%= booking.starts_at %></p>
+        <p style= "width: 70px;">End date: <%= booking.ends_at %></p></div>
+
+      <div class="card-footer">
+
+      <div class="card-subtitle" style="text-align: center;">
+          Total price in $: <%= booking.car.price_per_day * (booking.ends_at.to_date - booking.starts_at.to_date).to_i %>
+          <p>Number of days: <%= (booking.ends_at.to_date - booking.starts_at.to_date).to_i %></p>
+        </div>
+        </div>
+
+
+        <% if (booking.ends_at.to_date - booking.starts_at.to_date).to_i != 0 %>
+          <div style="text-align: center; padding:10px">
+            <%= link_to "Delete", booking_path(booking), data: { turbo_method: :delete } , method: :delete, class: "card-btn persobtn" %>
+            </div>
+        <% end %>
+        <div style="text-align: center;padding:10px">
+<% if !booking.accepted %>
+            <p style="color: orange;">Status: Pending</p>
+            <% else %>
+            <p>Status: Accepted</p>
+            <% end %>
+        </div>
+
+      </div>
+      <% end %>
+    </div>
+
+</div>

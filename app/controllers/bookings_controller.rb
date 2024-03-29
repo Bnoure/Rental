@@ -6,7 +6,9 @@ class BookingsController < ApplicationController
       start_date = booking.starts_at
       end_date = booking.ends_at
       car = booking.car
-      calculate_price(start_date, end_date, car)
+      price = calculate_price(start_date, end_date, car)
+      days = (end_date - start_date).to_i
+      [price, days]
     end
   end
 
@@ -16,6 +18,7 @@ class BookingsController < ApplicationController
     @end_date = @booking.ends_at
     @car = @booking.car
     @price = calculate_price(@start_date, @end_date, @car)
+    @date = (@end_date - @start_date).to_i
   end
 
   def new
@@ -31,6 +34,7 @@ class BookingsController < ApplicationController
   def create
     @car = Car.find(params[:car_id])
     @booking = Booking.new(booking_params)
+    @booking.accepted = false
     @booking.car = @car
     @booking.user = current_user
     if @booking.save
@@ -44,6 +48,7 @@ class BookingsController < ApplicationController
     @booking = Booking.find(params[:id])
     @booking.destroy
     redirect_to user_bookings_path(current_user), notice: 'Booking was successfully destroyed.'
+
   end
 
   private

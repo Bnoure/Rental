@@ -27,22 +27,18 @@ class CarsController < ApplicationController
   def destroy
     @car = Car.find(params[:id])
     @car.destroy
-    redirect_to cars_path
+    redirect_to my_cars_path
   end
+
   def my_cars
     if user_signed_in?
-      @my_cars = current_user.cars
+      @my_cars = current_user.cars || []
     else
-      # Redirigez vers la page de connexion, ou où vous voulez
       redirect_to new_user_session_path
     end
   end
 
   private
-
-  def my_cars
-    @my_cars = current_user.cars
-  end
 
   def set_search_params_and_dates
     return unless params[:search]
