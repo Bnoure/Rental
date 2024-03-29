@@ -227,3 +227,15 @@
     gap: 50px;
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .container .row .voiture {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container .row .voiture .card {
+    margin-right: 20px; /* Ajoutez un espacement entre les cartes */
+    margin-left: 20px; /* Ajoutez un espacement entre les cartes */
+  }
+}
