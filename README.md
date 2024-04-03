@@ -6,9 +6,9 @@
 
 ## 🚗 Rental
 
-<div align="center">
+
   Bienvenue sur Rental, votre plateforme de location de voitures conviviale et intuitive !
-</div>
+
 
 Imaginez-vous pouvoir accéder à la page d'accueil en un clin d'œil, découvrir une liste complète de voitures à louer, et même plonger dans les détails captivants de chaque véhicule. Chez Rental, nous avons conçu chaque étape de votre expérience avec soin, pour que chaque clic soit une aventure.
 
@@ -28,17 +28,17 @@ Bienvenue dans le monde de la location de voitures simplifiée. Bienvenue sur Re
 
 ## 📸 Screenshots
 
-<div align="center">
+
   ![Screenshot de la page d'accueil](https://res.cloudinary.com/dgmantli3/image/upload/v1712155387/github/Rentallog_mwul2k.png)
 
   ![Screenshot de la page de recherche](https://res.cloudinary.com/dgmantli3/image/upload/v1712155385/github/Search_spkcy6.png)
-</div>
+
 
 ## 🔧 Languages and Technologies
 
-<div align="center">
+
   Ruby: [![Ruby](https://img.shields.io/badge/Ruby-3.1-red.svg)](https://www.ruby-lang.org/en/) &nbsp; Rails: [![Rails](https://img.shields.io/badge/Rails-7.1.0-brightgreen.svg)](https://rubyonrails.org/) &nbsp; JavaScript: [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) &nbsp; Bootstrap: [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-blueviolet.svg)](https://getbootstrap.com/) &nbsp; SCSS: [![SCSS](https://img.shields.io/badge/SCSS-Latest-orange.svg)](https://sass-lang.com/) &nbsp; PostgreSQL: [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13.5-blue.svg)](https://www.postgresql.org/)
-</div>
+
 
 ## 🌐 Site
 
@@ -77,8 +77,8 @@ Bienvenue dans le monde de la location de voitures simplifiée. Bienvenue sur Re
      ```bash
      rails db:migrate db:seed
      ```
-</div>
 
-<div align="center">
+
+
   ![Logo](https://res.cloudinary.com/dgmantli3/image/upload/v1712156359/github/Rental-removebg-preview_a2cnel.png)
-</div>
+
