@@ -14,7 +14,7 @@ Passionné par le développement web, je m'engage pleinement dans une carrière 
 
 <div align="center">  
   
- ## 🌐 Site
+ ## 🌐 🚗  Site
  </div>
 
 <div align="center">
@@ -22,11 +22,6 @@ Passionné par le développement web, je m'engage pleinement dans une carrière 
   Découvrez Rental en ligne sur [stackrental.online](https://stackrental.online)
 </div> 
 
-<div align="center">
-# 🚗 Rental
-</div>
-
-Bienvenue sur Rental, votre plateforme de location de voitures conviviale et intuitive !
 
 Imaginez-vous pouvoir accéder à la page d'accueil en un clin d'œil, découvrir une liste complète de voitures à louer, et même plonger dans les détails captivants de chaque véhicule. Chez Rental, nous avons conçu chaque étape de votre expérience avec soin, pour que chaque clic soit une aventure.
 
