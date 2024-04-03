@@ -7,8 +7,12 @@
 <div align="center">
 Passionné par le développement web, je m'engage pleinement dans une carrière en tant que développeur Full Stack. Fort d'une expérience antérieure en tant que chef de projet IT, j'ai décidé de me consacrer entièrement à l'univers du développement pour explorer ma passion pour la création de solutions numériques innovantes. Mon objectif est de maîtriser tous les aspects du développement, des technologies front-end comme React et TypeScript aux technologies back-end telles que Node.js, afin de créer des applications web robustes et performantes.
 </div>
-
+---
+---
+<div align="center">
+  
 # 🚗 Rental
+</div>
 
 Bienvenue sur Rental, votre plateforme de location de voitures conviviale et intuitive !
 
