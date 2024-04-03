@@ -36,7 +36,10 @@ Bienvenue dans le monde de la location de voitures simplifiée. Bienvenue sur Re
 
 ***
 
+<div align="center">
+  
 ## Screenshots
+</div>
 
 <div align="center">
   <img src="https://res.cloudinary.com/dgmantli3/image/upload/w_500,h_300/v1712155387/github/Rentallog_mwul2k.png" alt="Screenshot de la page d'accueil" />
@@ -48,13 +51,19 @@ Bienvenue dans le monde de la location de voitures simplifiée. Bienvenue sur Re
 
 ***
 
+<div align="center">
+  
 ## Languages and Technologies
+</div>
 
 [![Ruby](https://img.shields.io/badge/Ruby-3.1-red.svg)](https://www.ruby-lang.org/en/) &nbsp;[![Rails](https://img.shields.io/badge/Rails-7.1.0-brightgreen.svg)](https://rubyonrails.org/) &nbsp;  [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) &nbsp; [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-blueviolet.svg)](https://getbootstrap.com/) &nbsp; [![SCSS](https://img.shields.io/badge/SCSS-Latest-orange.svg)](https://sass-lang.com/) &nbsp; [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13.5-blue.svg)](https://www.postgresql.org/)
 
 ***
+
+<div align="center">
   
 ## Installation
+</div>
 
 1. **Cloner le dépôt Rental :**
    ```bash
