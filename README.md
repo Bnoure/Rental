@@ -24,10 +24,13 @@ Bienvenue dans le monde de la location de voitures simplifiée. Bienvenue sur Re
 
 
 ## Screenshots
+<div align="center">
+  <img src="https://res.cloudinary.com/dgmantli3/image/upload/w_500,h_300/v1712155387/github/Rentallog_mwul2k.png" alt="Screenshot de la page d'accueil" />
+</div>
 
-![Screenshot de la page d'accueil](https://res.cloudinary.com/dgmantli3/image/upload/v1712155387/github/Rentallog_mwul2k.png)
-
-![Screenshot de la page de recherche](https://res.cloudinary.com/dgmantli3/image/upload/v1712155385/github/Search_spkcy6.png)
+<div align="center">
+  <img src="https://res.cloudinary.com/dgmantli3/image/upload/w_500,h_300/v1712155385/github/Search_spkcy6.png" alt="Screenshot de la page de recherche" />
+</div>
 ## Languages and Technologies
 
 Ruby: [![Ruby](https://img.shields.io/badge/Ruby-3.1-red.svg)](https://www.ruby-lang.org/en/) &nbsp; Rails: [![Rails](https://img.shields.io/badge/Rails-7.1.0-brightgreen.svg)](https://rubyonrails.org/) &nbsp; JavaScript: [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) &nbsp; Bootstrap: [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-blueviolet.svg)](https://getbootstrap.com/) &nbsp; SCSS: [![SCSS](https://img.shields.io/badge/SCSS-Latest-orange.svg)](https://sass-lang.com/) &nbsp; PostgreSQL: [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13.5-blue.svg)](https://www.postgresql.org/)
