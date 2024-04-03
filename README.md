@@ -30,10 +30,13 @@ Naviguez à travers notre sélection diversifiée de voitures, de la berline él
 Et ce n'est pas tout ! Vous pouvez réserver votre voiture de rêve en quelques étapes simples et fluides. Avec notre interface utilisateur propre et nos fonctionnalités intuitives, la réservation devient un jeu d'enfant.
 
 Pour rendre votre expérience encore plus agréable, nous avons mis en place des comptes de test pour que vous puissiez explorer toutes les fonctionnalités de notre site. Connectez-vous avec les identifiants suivants : 
-
+<div align="center">
 Email : test1@test.com, test2@test.com, test3@test.com
+</div> 
 ---
+<div align="center">
 Mot de passe : password
+</div> 
 ---
 Chez Rental, votre satisfaction est notre priorité. Nous avons construit notre application sur un solide schéma de base de données, garantissant l'intégrité de vos données et le bon fonctionnement de notre plateforme. Parce que pour nous, votre confort et votre tranquillité d'esprit sont essentiels.
 
