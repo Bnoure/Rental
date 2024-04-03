@@ -1,67 +1,84 @@
-# Rails Rent Cars
+## 🚀 About Me
 
-Dans cet exercice, vous devez implémenter des fonctionnalités dans une application web `rails` à partir du cahier des charges spécifié ci-dessous et correspondant à votre sujet :
+<div align="center">
+  Passionné par le développement web, je m'engage pleinement dans une carrière en tant que développeur Full Stack. Fort d'une expérience antérieure en tant que chef de projet IT, j'ai décidé de me consacrer entièrement à l'univers du développement pour explorer ma passion pour la création de solutions numériques innovantes. Mon objectif est de maîtriser tous les aspects du développement, des technologies front-end comme React et TypeScript aux technologies back-end telles que Node.js, afin de créer des applications web robustes et performantes.
+</div>
 
-```
-Vous devez créer une plateforme pour louer des voitures entre particuliers
-```
+## 🚗 Rental
 
-## Setup
+<div align="center">
+  Bienvenue sur Rental, votre plateforme de location de voitures conviviale et intuitive !
+</div>
 
-Clonez le dépôt GitHub et exécutez les commandes habituelles vous permettant de lancer l'application sur votre ordinateur.
+Imaginez-vous pouvoir accéder à la page d'accueil en un clin d'œil, découvrir une liste complète de voitures à louer, et même plonger dans les détails captivants de chaque véhicule. Chez Rental, nous avons conçu chaque étape de votre expérience avec soin, pour que chaque clic soit une aventure.
 
-Si vous voyez s'afficher le message `rbenv: version 3.1.2 is not installed`, exécutez la commande suivante pour installez la version de `ruby` correspondante :
+Naviguez à travers notre sélection diversifiée de voitures, de la berline élégante au SUV robuste, en passant par la citadine agile. Vous cherchez une Audi pour une virée citadine ? Une Jeep pour une escapade hors des sentiers battus ? Nous avons ce qu'il vous faut !
 
-```bash
-rbenv install 3.1.2 && gem install bundler rubocop pry pry-byebug
-```
+Et ce n'est pas tout ! Vous pouvez réserver votre voiture de rêve en quelques étapes simples et fluides. Avec notre interface utilisateur propre et nos fonctionnalités intuitives, la réservation devient un jeu d'enfant.
 
-Vous pourrez alors réexécuter les commandes habituelles vous permettant de lancer l'application.
+Pour rendre votre expérience encore plus agréable, nous avons mis en place des comptes de test pour que vous puissiez explorer toutes les fonctionnalités de notre site. Connectez-vous avec les identifiants suivants : 
 
-## Base de données
+Email : test1@test.com, test2@test.com, test3@test.com
 
-Effectuez les modifications du code nécessaires à l'obtention du schema de données suivant :
+Mot de passe : password
 
-<img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/assess/rent_car_db_schema.png" alt="DB schema">
+Chez Rental, votre satisfaction est notre priorité. Nous avons construit notre application sur un solide schéma de base de données, garantissant l'intégrité de vos données et le bon fonctionnement de notre plateforme. Parce que pour nous, votre confort et votre tranquillité d'esprit sont essentiels.
 
-Une voiture n'est pas valide :
+Bienvenue dans le monde de la location de voitures simplifiée. Bienvenue sur Rental.
 
-- Si elle n'a pas de marque.
-- Si elle n'a pas de modèle.
-- Si elle n'a pas d'adresse.
-- Si son prix journalier est inférieur ou égal à zéro.
+## 📸 Screenshots
 
-Une réservation n'est pas valide :
+<div align="center">
+  ![Screenshot de la page d'accueil](https://res.cloudinary.com/dgmantli3/image/upload/v1712155387/github/Rentallog_mwul2k.png)
 
-- Si elle n'a pas de date de début.
-- Si elle n'a pas de date de fin.
+  ![Screenshot de la page de recherche](https://res.cloudinary.com/dgmantli3/image/upload/v1712155385/github/Search_spkcy6.png)
+</div>
 
-La suppression d'un utilisateur doit entraîner la suppression de ses voitures et de ses réservations. La suppression d'une voiture doit entraîner la suppression de ses réservations.
+## 🔧 Languages and Technologies
 
-**NB :** La gem `devise` a déjà été ajoutée et la table `users` a déjà été créée.
+<div align="center">
+  Ruby: [![Ruby](https://img.shields.io/badge/Ruby-3.1-red.svg)](https://www.ruby-lang.org/en/) &nbsp; Rails: [![Rails](https://img.shields.io/badge/Rails-7.1.0-brightgreen.svg)](https://rubyonrails.org/) &nbsp; JavaScript: [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) &nbsp; Bootstrap: [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-blueviolet.svg)](https://getbootstrap.com/) &nbsp; SCSS: [![SCSS](https://img.shields.io/badge/SCSS-Latest-orange.svg)](https://sass-lang.com/) &nbsp; PostgreSQL: [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13.5-blue.svg)](https://www.postgresql.org/)
+</div>
 
-## Interface utilisateur
+## 🌐 Site
 
-Effectuez les modifications du code nécessaires à l'implémentation des parcours utilisateurs suivants :
+<div align="center">
+  Découvrez Rental en ligne sur [stackrental.online](https://stackrental.online)
+</div>
 
-- En tant qu'utilisateur, je peux accéder à la page d'accueil.
-- En tant qu'utilisateur, je peux voir la liste de toutes les voitures.
-- En tant qu'utilisateur, je peux accéder aux détails d'une voiture.
-- En tant qu'utilisateur, je peux réserver une voiture.
+## 🔧 Installation
 
-## Spécifications
+<div align="center">
+  1. **Cloner le dépôt Rental :**
+     ```bash
+     git clone https://github.com/Bnoure/rental.git
+     ```
 
-- Respectez les conventions de `rails`.
-- La page d'accueil doit contenir un lien permettant d'accéder à la liste des voitures.
-- La page listant les voitures doit contenir les liens permettant d'accéder aux détails de chaque voiture.
-- La page affichant les détails d'une voiture doit contenir un lien permettant de retourner sur la page listant toutes les voitures.
-- La page affichant les détails d'une voiture doit contenir le formulaire permettant de faire une réservation.
-- Le formulaire de réservation doit utiliser un sélecteur de date <a href="https://flatpickr.js.org/examples/" target="_blank">Flatpickr</a> pour faciliter la saisie des dates, de type <a href="https://flatpickr.js.org/examples/#range-calendar" target="_blank">range</a>, le plus adapté a la saisie d'une période.
-- Lors de la soumission du formulaire de réservation, l'utilisateur doit être redirigé vers la page de détails de la voiture et une <a href="https://www.rubyguides.com/2019/11/rails-flash-messages/" target="_blank">notification flash</a> doit s'afficher pour confirmer la réservation.
+  2. **Accéder au répertoire du projet :**
+     ```bash
+     cd rental
+     ```
 
-## Ressources
+  3. **Installer les dépendances :**
+     ```bash
+     bundle install
+     ```
 
-Pour avoir une interface soignée, nous vous conseillons d'utiliser :
+  4. **Configurer la clé Cloudinary :**
+     ```bash
+     touch .env
+     ```
+     Ajouter la clé Cloudinary dans le fichier .env :
+     ```
+     CLOUDINARY=xxxx
+     ```
 
-- <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank">Bootstrap</a> (déjà installé)
-- <a href="https://uikit.lewagon.com/" target="_blank">L'UI Kit du Wagon</a>
+  5. **Exécuter la migration et le seed :**
+     ```bash
+     rails db:migrate db:seed
+     ```
+</div>
+
+<div align="center">
+  ![Logo](https://res.cloudinary.com/dgmantli3/image/upload/v1712156359/github/Rental-removebg-preview_a2cnel.png)
+</div>
