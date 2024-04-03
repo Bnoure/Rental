@@ -1,14 +1,10 @@
+
 ## 🚀 About Me
+Passionné par le développement web, je m'engage pleinement dans une carrière en tant que développeur Full Stack. Fort d'une expérience antérieure en tant que chef de projet IT, j'ai décidé de me consacrer entièrement à l'univers du développement pour explorer ma passion pour la création de solutions numériques innovantes. Mon objectif est de maîtriser tous les aspects du développement, des technologies front-end comme React et TypeScript aux technologies back-end telles que Node.js, afin de créer des applications web robustes et performantes.
 
-<div align="center">
-  Passionné par le développement web, je m'engage pleinement dans une carrière en tant que développeur Full Stack. Fort d'une expérience antérieure en tant que chef de projet IT, j'ai décidé de me consacrer entièrement à l'univers du développement pour explorer ma passion pour la création de solutions numériques innovantes. Mon objectif est de maîtriser tous les aspects du développement, des technologies front-end comme React et TypeScript aux technologies back-end telles que Node.js, afin de créer des applications web robustes et performantes.
-</div>
+# 🚗 Rental
 
-## 🚗 Rental
-
-
-  Bienvenue sur Rental, votre plateforme de location de voitures conviviale et intuitive !
-
+Bienvenue sur Rental, votre plateforme de location de voitures conviviale et intuitive !
 
 Imaginez-vous pouvoir accéder à la page d'accueil en un clin d'œil, découvrir une liste complète de voitures à louer, et même plonger dans les détails captivants de chaque véhicule. Chez Rental, nous avons conçu chaque étape de votre expérience avec soin, pour que chaque clic soit une aventure.
 
@@ -19,66 +15,61 @@ Et ce n'est pas tout ! Vous pouvez réserver votre voiture de rêve en quelques 
 Pour rendre votre expérience encore plus agréable, nous avons mis en place des comptes de test pour que vous puissiez explorer toutes les fonctionnalités de notre site. Connectez-vous avec les identifiants suivants : 
 
 Email : test1@test.com, test2@test.com, test3@test.com
-
+---
 Mot de passe : password
-
+---
 Chez Rental, votre satisfaction est notre priorité. Nous avons construit notre application sur un solide schéma de base de données, garantissant l'intégrité de vos données et le bon fonctionnement de notre plateforme. Parce que pour nous, votre confort et votre tranquillité d'esprit sont essentiels.
 
 Bienvenue dans le monde de la location de voitures simplifiée. Bienvenue sur Rental.
 
-## 📸 Screenshots
 
+## Screenshots
 
-  ![Screenshot de la page d'accueil](https://res.cloudinary.com/dgmantli3/image/upload/v1712155387/github/Rentallog_mwul2k.png)
+![Screenshot de la page d'accueil](https://res.cloudinary.com/dgmantli3/image/upload/v1712155387/github/Rentallog_mwul2k.png)
 
-  ![Screenshot de la page de recherche](https://res.cloudinary.com/dgmantli3/image/upload/v1712155385/github/Search_spkcy6.png)
+![Screenshot de la page de recherche](https://res.cloudinary.com/dgmantli3/image/upload/v1712155385/github/Search_spkcy6.png)
+## Languages and Technologies
 
+Ruby: [![Ruby](https://img.shields.io/badge/Ruby-3.1-red.svg)](https://www.ruby-lang.org/en/) &nbsp; Rails: [![Rails](https://img.shields.io/badge/Rails-7.1.0-brightgreen.svg)](https://rubyonrails.org/) &nbsp; JavaScript: [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) &nbsp; Bootstrap: [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-blueviolet.svg)](https://getbootstrap.com/) &nbsp; SCSS: [![SCSS](https://img.shields.io/badge/SCSS-Latest-orange.svg)](https://sass-lang.com/) &nbsp; PostgreSQL: [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13.5-blue.svg)](https://www.postgresql.org/)
 
-## 🔧 Languages and Technologies
+## Installation
 
+Install my-project with npm
 
-  Ruby: [![Ruby](https://img.shields.io/badge/Ruby-3.1-red.svg)](https://www.ruby-lang.org/en/) &nbsp; Rails: [![Rails](https://img.shields.io/badge/Rails-7.1.0-brightgreen.svg)](https://rubyonrails.org/) &nbsp; JavaScript: [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) &nbsp; Bootstrap: [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-blueviolet.svg)](https://getbootstrap.com/) &nbsp; SCSS: [![SCSS](https://img.shields.io/badge/SCSS-Latest-orange.svg)](https://sass-lang.com/) &nbsp; PostgreSQL: [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13.5-blue.svg)](https://www.postgresql.org/)
+```bash
+  npm install my-project
+  cd my-project
+```
+    
+## Installation
 
+1. **Cloner le dépôt Rental :**
+   ```bash
+   git clone https://github.com/Bnoure/rental.git
+   ```
 
-## 🌐 Site
+2. **Accéder au répertoire du projet :**
+   ```bash
+   cd rental
+   ```
 
-<div align="center">
-  Découvrez Rental en ligne sur [stackrental.online](https://stackrental.online)
-</div>
+3. **Installer les dépendances :**
+   ```bash
+   bundle install
+   ```
 
-## 🔧 Installation
+4. **Configurer la clé Cloudinary :**
+   ```bash
+   touch .env
+   ```
+   Ajouter la clé Cloudinary dans le fichier .env :
+   ```
+   CLOUDINARY=xxxx
+   ```
 
-<div align="center">
-  1. **Cloner le dépôt Rental :**
-     ```bash
-     git clone https://github.com/Bnoure/rental.git
-     ```
-
-  2. **Accéder au répertoire du projet :**
-     ```bash
-     cd rental
-     ```
-
-  3. **Installer les dépendances :**
-     ```bash
-     bundle install
-     ```
-
-  4. **Configurer la clé Cloudinary :**
-     ```bash
-     touch .env
-     ```
-     Ajouter la clé Cloudinary dans le fichier .env :
-     ```
-     CLOUDINARY=xxxx
-     ```
-
-  5. **Exécuter la migration et le seed :**
-     ```bash
-     rails db:migrate db:seed
-     ```
-
-
-
-  ![Logo](https://res.cloudinary.com/dgmantli3/image/upload/v1712156359/github/Rental-removebg-preview_a2cnel.png)
+5. **Exécuter la migration et le seed :**
+   ```bash
+   rails db:migrate db:seed
+   ```
+![Logo](https://res.cloudinary.com/dgmantli3/image/upload/v1712156359/github/Rental-removebg-preview_a2cnel.png)
 
