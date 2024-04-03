@@ -31,6 +31,7 @@ Et ce n'est pas tout ! Vous pouvez réserver votre voiture de rêve en quelques 
 
 Pour rendre votre expérience encore plus agréable, nous avons mis en place des comptes de test pour que vous puissiez explorer toutes les fonctionnalités de notre site. Connectez-vous avec les identifiants suivants : 
 
+---
 <div align="center">
   
 Email : test1@test.com, test2@test.com, test3@test.com
