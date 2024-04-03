@@ -1,6 +1,9 @@
 
 ## 🚀 About Me
+
+<div align="center">
 Passionné par le développement web, je m'engage pleinement dans une carrière en tant que développeur Full Stack. Fort d'une expérience antérieure en tant que chef de projet IT, j'ai décidé de me consacrer entièrement à l'univers du développement pour explorer ma passion pour la création de solutions numériques innovantes. Mon objectif est de maîtriser tous les aspects du développement, des technologies front-end comme React et TypeScript aux technologies back-end telles que Node.js, afin de créer des applications web robustes et performantes.
+</div>
 
 # 🚗 Rental
 
@@ -24,6 +27,7 @@ Bienvenue dans le monde de la location de voitures simplifiée. Bienvenue sur Re
 
 
 ## Screenshots
+
 <div align="center">
   <img src="https://res.cloudinary.com/dgmantli3/image/upload/w_500,h_300/v1712155387/github/Rentallog_mwul2k.png" alt="Screenshot de la page d'accueil" />
 </div>
@@ -31,19 +35,12 @@ Bienvenue dans le monde de la location de voitures simplifiée. Bienvenue sur Re
 <div align="center">
   <img src="https://res.cloudinary.com/dgmantli3/image/upload/w_500,h_300/v1712155385/github/Search_spkcy6.png" alt="Screenshot de la page de recherche" />
 </div>
+
 ## Languages and Technologies
 
-Ruby: [![Ruby](https://img.shields.io/badge/Ruby-3.1-red.svg)](https://www.ruby-lang.org/en/) &nbsp; Rails: [![Rails](https://img.shields.io/badge/Rails-7.1.0-brightgreen.svg)](https://rubyonrails.org/) &nbsp; JavaScript: [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) &nbsp; Bootstrap: [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-blueviolet.svg)](https://getbootstrap.com/) &nbsp; SCSS: [![SCSS](https://img.shields.io/badge/SCSS-Latest-orange.svg)](https://sass-lang.com/) &nbsp; PostgreSQL: [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13.5-blue.svg)](https://www.postgresql.org/)
+[![Ruby](https://img.shields.io/badge/Ruby-3.1-red.svg)](https://www.ruby-lang.org/en/) &nbsp;[![Rails](https://img.shields.io/badge/Rails-7.1.0-brightgreen.svg)](https://rubyonrails.org/) &nbsp;  [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) &nbsp; [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-blueviolet.svg)](https://getbootstrap.com/) &nbsp; [![SCSS](https://img.shields.io/badge/SCSS-Latest-orange.svg)](https://sass-lang.com/) &nbsp; [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13.5-blue.svg)](https://www.postgresql.org/)
 
-## Installation
-
-Install my-project with npm
-
-```bash
-  npm install my-project
-  cd my-project
-```
-    
+  
 ## Installation
 
 1. **Cloner le dépôt Rental :**
@@ -74,5 +71,8 @@ Install my-project with npm
    ```bash
    rails db:migrate db:seed
    ```
-![Logo](https://res.cloudinary.com/dgmantli3/image/upload/v1712156359/github/Rental-removebg-preview_a2cnel.png)
+
+<div align="center">   
+ <img src= "https://res.cloudinary.com/dgmantli3/image/upload/v1712156359/github/Rental-removebg-preview_a2cnel.png"/>
+</div>
 
