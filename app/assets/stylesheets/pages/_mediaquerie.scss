@@ -1,50 +1,38 @@
-// Pour .search
-@media only screen and (max-width: 600px) {
-  .search {
-    width: 100%;
-    // Ajoutez d'autres styles ici
-  }
-}
-
-// Pour .voiture
-@media only screen and (max-width: 600px) {
-  .voiture {
-    flex-direction: column;
-    gap: 20px;
-    // Ajoutez d'autres styles ici
-  }
-}
-
-// Pour .lasearch
-@media only screen and (max-width: 600px) {
-  .lasearch {
-    flex-direction: column;
-    // Ajoutez d'autres styles ici
-  }
-}
-
-// Pour .monbutton
-@media only screen and (max-width: 600px) {
-  .monbutton {
-    left: 0;
-    top: 0;
-    // Ajoutez d'autres styles ici
-  }
-}
-
-// Pour .now
-@media only screen and (max-width: 600px) {
-  .now {
-    font-size: 30px;
-    right: 0;
-    bottom: 0;
-    // Ajoutez d'autres styles ici
-  }
-}
-
-@media only screen and (max-width: 600px) {
+/* Styles pour l'iPhone 13 Pro Max */
+@media (max-width: 428px) {
+  /* Navbar */
   .navbar {
+    position: relative;
+  }
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Footer */
+  footer .container {
     width: 100%;
-    // Ajoutez d'autres styles ici
+    padding: 0 20px;
+  }
+  footer .logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Hero Text */
+  .herotext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px; /* Taille de texte réduite */
+  }
+
+  /* Flatpicker */
+  #start-date-input,
+  #end-date-input {
+    width: 90%;
   }
 }
