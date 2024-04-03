@@ -1,4 +1,4 @@
----
+
 <div align="center">
   
 ## 🚀 About Me
@@ -10,8 +10,6 @@ Passionné par le développement web, je m'engage pleinement dans une carrière 
 </div>
 
 ***
-
-
 
 <div align="center">
   
@@ -36,6 +34,7 @@ Chez Rental, votre satisfaction est notre priorité. Nous avons construit notre 
 
 Bienvenue dans le monde de la location de voitures simplifiée. Bienvenue sur Rental.
 
+***
 
 ## Screenshots
 
@@ -47,10 +46,13 @@ Bienvenue dans le monde de la location de voitures simplifiée. Bienvenue sur Re
   <img src="https://res.cloudinary.com/dgmantli3/image/upload/w_500,h_300/v1712155385/github/Search_spkcy6.png" alt="Screenshot de la page de recherche" />
 </div>
 
+***
+
 ## Languages and Technologies
 
 [![Ruby](https://img.shields.io/badge/Ruby-3.1-red.svg)](https://www.ruby-lang.org/en/) &nbsp;[![Rails](https://img.shields.io/badge/Rails-7.1.0-brightgreen.svg)](https://rubyonrails.org/) &nbsp;  [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) &nbsp; [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-blueviolet.svg)](https://getbootstrap.com/) &nbsp; [![SCSS](https://img.shields.io/badge/SCSS-Latest-orange.svg)](https://sass-lang.com/) &nbsp; [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13.5-blue.svg)](https://www.postgresql.org/)
 
+***
   
 ## Installation
 
@@ -82,6 +84,7 @@ Bienvenue dans le monde de la location de voitures simplifiée. Bienvenue sur Re
    ```bash
    rails db:migrate db:seed
    ```
+***
 
 <div align="center">   
  <img src= "https://res.cloudinary.com/dgmantli3/image/upload/v1712156359/github/Rental-removebg-preview_a2cnel.png"/>
