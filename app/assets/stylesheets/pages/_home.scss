@@ -96,10 +96,12 @@ footer {
   }
 
   footer .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 30px;
+    position: sticky;
+
+    transform: translateY(0px);
+    transform: translateX(10px);
+
+    z-index: 999;
   }
 }
 @media screen and (max-width: 1440px) {
